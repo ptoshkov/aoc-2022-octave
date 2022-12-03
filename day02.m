@@ -14,7 +14,7 @@ _map = containers.Map(
 res1 = cellfun(@(x) _map(x), dat, 'UniformOutput', false);
 res1 = sum([res1{:}]);
 
-% assert(res1, 15337);
+assert(res1, 15337);
 
 Z_SCORE=6; % win
 Y_SCORE=3; % draw
@@ -29,6 +29,9 @@ _map = containers.Map(
 
 res2 = cellfun(@(x) _map(x), dat, 'UniformOutput', false);
 res2 = sum([res2{:}]);
+
+assert(res2, 11696);
+
 
 
 
