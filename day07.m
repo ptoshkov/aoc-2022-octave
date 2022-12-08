@@ -87,8 +87,8 @@ end
 assert(res1, 1886043);
 
 space_needed = 30000000 - (70000000 - du);
-res2 = (values(res2))([cellfun(@(x) x >= space_needed, values(res2), 'un', 0){:}])
-res2 = min([res2{:}])
+res2 = (values(res2))([cellfun(@(x) x >= space_needed, values(res2), 'un', 0){:}]);
+res2 = min([res2{:}]);
 
 assert(res2, 3842121);
 
